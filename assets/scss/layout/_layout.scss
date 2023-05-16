@@ -18,6 +18,12 @@
     }
 }
 
+@each $name, $theme in $themes {
+    @include create-header($name, $theme);
+    @include create-left-nav($name, $theme);
+    @include create-footer($name, $theme);
+}
+
 @media(max-width: 768px){
     .cgc {
         &-main-container{
