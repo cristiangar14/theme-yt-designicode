@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    <section class="cgc-yellow cgc-main-container">
+    <section class="cgc-yellow cgc-main-container" id="theme-main-container">
         <!---------------------------- 
             Start header
         ------------------------------>
         <header class="cgc-header">
             <div class="cgc-header__brand">
-                <i class="fas fa-bars cgc-header__brand-menu"></i>
+                <i class="fas fa-bars cgc-header__brand-menu js-hide-show-menu"></i>
                 <div class="cgc-header__brand-logo">
                     <img src="assets/images/logo.png" alt="un logo">
                     <span>etflix</span>
@@ -33,9 +33,9 @@
         <!---------------------------- 
             Start left nav
             ------------------------------>
-        <nav class="cgc-left-nav">
+        <nav class="cgc-left-nav" id="theme-left-nav">
             <div class="cgc-left-nav-brand">
-                <i class="fas fa-bars cgc-left-nav-brand__menu"></i>
+                <i class="fas fa-bars cgc-left-nav-brand__menu js-hide-show-menu"></i>
                 <div class="cgc-left-nav-brand__logo">
                     <img src="assets/images/logo.png" alt="Logo">
                     <span>etflix</span>
@@ -135,5 +135,7 @@
         ------------------------------>
         
     </section>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="./assets/js/theme.js"></script>
 </body>
 </html>
