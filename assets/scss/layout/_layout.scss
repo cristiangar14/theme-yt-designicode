@@ -1,0 +1,27 @@
+@import '../themes';
+
+.cgc {
+    &-main-container, &-main-container-full{
+        display: grid;
+        grid-template-columns: 200px auto;
+        grid-template-rows: 60px auto 50px;
+        height: 100vh;
+        min-height: 500px;
+    }
+
+    &-main-container-full {
+        grid-template-columns: 0 auto;
+    }
+
+    &-header, &-left-nav {
+        box-shadow: 1px 1px 6px rgba(0,0,0, 0.5);
+    }
+}
+
+@media(max-width: 768px){
+    .cgc {
+        &-main-container{
+            grid-template-columns: 0 auto;
+        }
+    }
+}
